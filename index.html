@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cherify</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Verdana', sans-serif;
+            background: linear-gradient(to bottom, #ffe4ec, #fff);
+            color: #444;
+        }
+
+        header {
+            background: #ff8fc4;
+            padding: 25px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background: #ffc1da;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #444;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .productos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .producto {
+            background: white;
+            border-radius: 20px;
+            padding: 15px;
+            width: 220px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .producto:hover {
+            transform: scale(1.05);
+        }
+
+        .producto img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        button {
+            background: #ff8fc4;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 12px;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        footer {
+            background: #ff8fc4;
+            text-align: center;
+            padding: 15px;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🍒 CHERIFY 🍒</h1>
+    <p>Handmade • Cute • Y2K vibes ✨</p>
+</header>
+
+<section class="hero">
+    <h2>Bienvenid@ 💕</h2>
+    <p>Detalles únicos hechos con amor</p>
+</section>
+
+<section class="productos">
+
+    <div class="producto">
+        <img src="https://via.placeholder.com/220">
+        <h3>Stickers</h3>
+        <p>$20 MXN</p>
+        <button onclick="comprar('Stickers')">Comprar</button>
+    </div>
+
+    <div class="producto">
+        <img src="https://via.placeholder.com/220">
+        <h3>Pines</h3>
+        <p>$35 MXN</p>
+        <button onclick="comprar('Pines')">Comprar</button>
+    </div>
+
+    <div class="producto">
+        <img src="https://via.placeholder.com/220">
+        <h3>Photocards</h3>
+        <p>$15 MXN</p>
+        <button onclick="comprar('Photocards')">Comprar</button>
+    </div>
+
+</section>
+
+<footer>
+    <p>📱 Instagram: @cher1fyy</p>
+    <p>💌 Pedidos por DM</p>
+</footer>
+
+<script>
+function comprar(producto) {
+    window.open("https://www.instagram.com/cher1fyy", "_blank");
+}
+</script>
